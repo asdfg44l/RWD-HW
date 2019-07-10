@@ -4,65 +4,187 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+
+  <title>六角西餐廳</title>
+  <link rel="shortcut icon" href='img/favicon.ico'>
+  <meta name='description' content="咬一口就無法忘懷的漢堡，七夕絕對無法錯過的好滋味">
+
+  <meta property="og:title" content='六角西餐廳'>
+  <meta property="og:description" content="咬一口就無法忘懷的漢堡，七夕絕對無法錯過的好滋味"> 
+  <meta property="og:type" content="website"> 
+  <meta property="og:url" content="https://......"> 
+  <meta property="og:image" content="img/Bitmap.png"> 
+
+  <link rel="apple-touch-icon" href="img/burger_icon.svg">
+
   <link rel="stylesheet" href="css/all.css">
 </head>
 <body>
   <div class="wrap">
       <div class="header">
           <div class="topbar">
-            <ul>
-              <li><a href="#"> <img src="img/fb.png"> <span>粉絲團</span></a></li>
-              <li class='contact_us'><a href="#"> <img src="img/twitter.png"> <span>聯絡我們</span></a></li>
+            <h1 class="logo"><a href="#">六角西餐廳</a></h1>
+            <a class="openlist" href="#">
+                <div class="underline line1"></div>
+                <div class="underline line2"></div>
+                <div class="underline line3"></div>
+            </a>
+            <ul class="toplist">
+              <li><a href="#charactor">特色</a></li>
+              <li><a href="#chef">主廚</a></li>
+              <li><a href="#map">地圖</a></li>
+              <li><a href="purchase.html">線上訂購</a></li>
+              <li><a href="logIn.html">註冊</a></li>
+              <div class="clearfix"></div>
             </ul>
             <div class="clearfix"></div>
           </div>
-          
           <div class="banner">
-            <h1><a href="#">Hex School</a></h1>
-            <ul>
-              <li><a href="#">首頁</a></li>
-              <li><a href="#">課程介紹</a></li>
-              <li><a href="#">部落格</a></li>
-              <li><a href="#">聯絡我們</a></li>
-            </ul>
-            <div class="clearfix"></div>
-          </div>   
+            <div class="bannerInfo">
+                <p class="infoTitle">咬一口就無發忘懷的漢堡</p>
+                <p class="infoContent">七夕絕對無法錯過的好滋味</p>
+                <p class="infoContent">六角大漢堡</p>
+            </div>
+          </div>
       </div>
       <div class="content">
-          <ul class="course">
+        <div class="charactor" id="charactor">
+          <div class="char_title">
+            <div>
+              <p>客人總是在詢問</p>
+              <div class="line"><div></div><div></div></div>
+              <p>這麼好吃的秘訣是什麼</p>
+            </div>         
+          </div>
+          <ul class="feature">
             <li>
-              <img src="img/feature-html5.png" >
-              <h3>Html 5 基礎教學</h3>
-              <p>主流前端網站設計的基礎就在六角學院，
-                在這裡不再是填鴨式教學，而是透過實際的範例，
-                了解正確的網站開發流程，講師均具有業界開發經驗，
-                讓學員學習業界主流的開發方法。
-              </p>
+              <img src="img/feature_1.png">
+              <h4>台灣本土蔬菜</h4>
+              <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
             </li>
             <li>
-              <img src="img/feature-rwd.png">
-              <h3>響應式網站設計</h3>
-              <p>響應式網站設計 (Responsive web design)，
-                目前大多使用者已經是必備的。六角學院將會提供業界響應式開發方法，
-                讓學生了解行動版開發技巧。
-              </p>
+              <img src="img/feature_2.png">
+              <h4>專業米其林廚師</h4>
+              <p>Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p>
             </li>
-            <li class='jQueryInfo'>
-              <img src="img/feature-jquery.png">
-              <h3>jQuery 實戰教學</h3>
-              <ul class='innerList'>
-                <p>本課程有以下特色</p>
-                <li>了解變數的使用方法</li>
-                <li>學習並操作 DOM</li>
-                <li>學習基本數學運算方法</li>
-                <li>套件的操作及應用</li>
-              </ul>
+            <li>
+              <img src="img/feature_3.png">
+              <h4>對於專業不能退讓</h4>
+              <p>Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p>
             </li>
-            <div class="clearfix"></div>
           </ul>
-          
+        </div>
+        <div class="chef" id="chef">
+          <img src="img/main_chef_brown.png">
+          <div class="chef_description">
+            <h3>
+              <p class="name">今日主廚：帕金森、梅在帕
+              <br>
+              <span>Tody Chef: Plum in Shock</span></p>
+            </h3>            
+            <p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.</p>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        
+        <div class="comment">
+          <ul>
+            <li>
+              <p class="avator"><img src="img/avatar_1.png"><span>高雄一口吃</span></p>
+              <p class="comment_description">自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+              <p class='job_title'> -- 產品經理</p>
+            </li>
+            <li>
+                <p class="avator"><img src="img/avatar_2.png"><span>廟口小霸王</span></p>
+                <p class="comment_description">自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+                <p class='job_title'> -- 金身道士</p>
+            </li>
+            <li>
+                <p class="avator"><img src="img/avatar_3.png"><span>春天也來了</span></p>
+                <p class="comment_description">自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+                <p class='job_title'> -- 美麗萬分</p>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <div class="map" id="map">
+          <div class="map_title">
+            <p>我們的位置不太夠坐
+            <br>
+            要不要先訂位呢？</p>
+          </div>
+          <div class="map_content">
+            <img src="img/Map.png" class="location">
+            <form class="pure-form pure-form-aligned map_form">
+                <fieldset>
+                    <div class="pure-control-group">
+                        <label for="name">姓名</label>
+                        <br>
+                        <input id="name" type="text" placeholder="請輸入姓名">
+                    </div>
+            
+                    <div class="pure-control-group">
+                        <label for="tel">電話</label>
+                        <br>
+                        <input id="tel" type="tel" placeholder="請輸入電話">
+                    </div>
+            
+                    <div class="pure-control-group">
+                        <label for="email">信箱</label>
+                        <br>
+                        <input id="email" type="email" placeholder="輸入信箱">
+                    </div>
+            
+                    <div class="pure-control-group">
+                        <label for="number">人數</label>
+                        <br>
+                        <input id="number" type="text" >
+                    </div>
+                    <div class="question">
+                      <p>是否需要素食</p>
+                      <label for="yes">是</label>
+                      <input type="radio" name="if" id="yes">
+                      <label for="yes">否</label>
+                      <input type="radio" name="if" id="yes">
+                      <div class="clearfix"></div>
+                      <div class="btn">
+                          <button class="pure-button pure-button-primary cancel" type="submit">取消</button>
+                          <button class="pure-button pure-button-primary confirm" type="submit">確定</button>
+                      </div>  
+                      <div class="clearfix"></div>
+                    </div>
+                </fieldset>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="left about">
+          <h3>關於 六角西餐廳</h3>
+          <p>Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. </p>
+        </div>
+        <div class="left contact">
+          <h3>聯絡方式</h3>
+          <ul>
+            <li>高雄市中正五路到底</li>
+            <li>+886 886 886</li>
+            <li>service@hexschool.com</li>
+          </ul>
+        </div>
+        <div class="link">
+          <h1>六角西餐廳</h1>
+          <p >
+            <a href="#" class="facebook"><img src="img/facebook-brands.svg"></a>
+            <a href="#" class="twitter"><img src="img/twitter-square-brands.svg"></a>
+            <a href="#" class="google"><img src="img/google-plus-square-brands.svg"></a>       
+            <div class="clearfix"></div>
+          </p>         
+        </div>
+        <div class="clearfix"></div>
       </div>
   </div>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/all.js"></script>
 </body>
 </html>
